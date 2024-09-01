@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+    <div class="row mb-4 p-4" style="background-color:blue; margin-right:1000px;margin-left:0px">
+        <div class="col-7">
+            <p class="fs-5 fw-bold">
+                Sign Up to AI Broker Tiers and enjoy all the perks
+            </p>
+            <p class="" style="font-size: 13px">
+                Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to AI Broker tiers now !
+            </p>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-2">
+            <button class="btn btn-primary" style="font-size:13px">Sign Up Now <span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;font-size:13px"></i></span></button>
+        </div>
+        @* <div class="">
+            <aside id="sidebar">
+                <div class="d-flex">
+                    <button>
+                        <img src="~/assets/ScreenshotCILogo-removebg-preview.png" style="height: 50px; width: 50px"/>
+                    </button>
+                    <div class="sidebar-logo">
+                        <h1> Extej </h1>
+                    </div>
+                    <div>
+                        <img src="~/assets/arrow-left-square-fill.svg">
+                    </div>
+                </div>
+                <div>
+                    <p class="text-uppercase">pages</p>
+                    <ul class="sidebar-nav list-unstyled">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#markets" aria-expanded="false" aria-controls="markets">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Markets</span> <span>4 <i class="fa-solid fa-angle-right"></i></span>
+                            </a>
+                            <ul id="markets" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Market Layout #1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Market Layout #2</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Market Layout #3</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Market Layout #4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span>Trading</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#wallets" aria-expanded="false" aria-controls="wallets">
+                                <i class="fa-solid fa-wallet"></i>
+                                <span>Wallets</span> <span> 10 <i class="fa-solid fa-angle-right"></i></span>
+                            </a>
+                            <ul id="wallets" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #2</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #3</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #4</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #5</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #6</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #7</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #8</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #9</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Wallet Layout #10</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <span>Loans</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa-solid fa-shield"></i>
+                                <span>Vaults</span> 
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#portfolio" aria-expanded="false" aria-controls="portfolio">
+                            <i class="fa-solid fa-briefcase"></i>
+                                <span>Portfolio</span> <span>3 <i class="fa-solid fa-angle-right"></i></span>
+                            </a>
+                            <ul id="portfolio" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Portfolio Layout #1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Portfolio Layout #2</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Portfolio Layout #3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa-solid fa-box"></i>
+                                <span>Liquidity pools</span>
+                            </a>
+                        </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#swap" aria-expanded="false" aria-controls="swap">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <span>Swap</span> <span>2 <i class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                        <ul id="swap" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Swap Layout #1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Swap Layout #2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="main">
+                <nav class="navbar navbar-expand px-4 py-3">
+                    <form action="#" class="d-sm-inline-block">
+                        <div class="input-group input-group-navbar" style="background-color: #f8fafd; display:flex;">
+                            <i class="fa-solid fa-magnifying-glass ms-4" style="display:flex; align-items:center"></i>
+                            <input type="text" class="form-control border-0 rounded-0" style="background-color: #f8fafd;" placeholder="Search..." />
+                        </div>
+                    </form>
+                    <div class="d-flex navbar-collapse collapse">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar" style="height:50px; width:50px;" />
+                            <p class="text-wrap" style="background-color:red; width:12rem">Austin Robertson Marketing Administrator</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                    <img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar" style="height:50px; width:50px;" />
+                    </div>
+                </nav>
+
+                <main class="content px-3 py-4">
+                    <div class="">
+                        <div class="mt-3 mb-3">
+                            <h2 class="fw-bold fs-4 mb-3"> Market Layout #3 </h2>
+
+                        <div class="row mb-4 p-4" style="background-color:blue">
+                                <div class="col-7">
+                                    <p class="fs-5 fw-bold">
+                                        Sign Up to AI Broker Tiers and enjoy all the perks
+                                    </p>
+                                    <p class="" style="font-size: 13px">
+                                        Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to AI Broker tiers now !
+                                    </p>
+                                </div>
+                                <div class="col-3"></div>
+                                <div class="col-2">
+                                <button class="btn btn-primary" style="font-size:13px">Sign Up Now <span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;font-size:13px"></i></span></button>
+                                </div>
+                                @* <div class="col-12">
+                                    <div class="card border-0 rounded-2" style="background-color:blue">
+                                        <div class="card-body py-4" style="display:flex; justify-content:space-between">
+                                            <div class="col-7">
+                                                <h5 class="mb-2 card-title fw-bold">Sing Up to AI Broker Tiers and enjoy all the perks</h5>
+                                                <p class="mb-2">
+                                                    Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to AI Broker tiers now !
+                                                </p>                                          
+                                            </div>
+                                            <div class="col-2 me-0"  style="margin-top:25px;">
+                                                    <button class="btn btn-primary">Sign Up Now <span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div> *@
+    </body>
+</html>
+
+<script src="https://kit.fontawesome.com/60abaa02ed.js" crossorigin="anonymous"></script>
