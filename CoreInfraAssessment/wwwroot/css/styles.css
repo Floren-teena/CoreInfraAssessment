@@ -3,6 +3,7 @@
     padding: 0;
     /*overflow:hidden;*/
 }
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #f4f7fe;
@@ -11,23 +12,121 @@ body {
     font-size: 13px;
     color: #1B2559;
 }
+
 .sign-up-card {
     background: linear-gradient(130deg, rgba(211,245,250,1) 34%, rgba(156,199,250,1) 46%, rgba(171,206,253,1) 57%, rgba(119,187,255,1) 65%, rgba(119,187,255,1) 88%);
-    border: none;
-    border-radius: 15px;
 }
+
 .sign-up-card h3 {
     font-size: 18.7px;
 }
+
 .market {
     font-size: 28px;
 }
-.top5-cols {
-    background-color: white;
+
+.social-title {
+    font-weight: 600;
+}
+
+.icon-bg {
+    background-color: #f8fafd;
+}
+
+.custom-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    border: none;
+}
+
+.custom-font-weight-5 {
+    font-weight: 500;
+}
+
+.custom-font-weight-6 {
+    font-weight: 600;
+}
+
+.custom-text-color-grey {
+    color: #9BAECA;
+}
+
+.custom-text-color-green {
+    color: #00BC84;
+}
+
+.custom-text-color-red {
+    color: #FF4874;
+}
+
+.custom-border-radius {
+    border-radius: 1px;
+}
+
+.custom-margin-bottom-12 {
+    margin-bottom: 12px;
+}
+
+.custom-col {
+    flex: 0 0 100%; /* Default to col-12 */
+}
+
+.custom-padding {
+    padding: 12px 10px;
+
+}
+
+.top-5-body span {
+    font-size: 12px;
+}
+
+.custom-margin-top-12 {
+    margin-top: 6px;
+}
+
+.custom-box-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #9BAECA;
+}
+
+.custom-font-size-12 {
+    font-size: 12px;
+}
+
+.custom-input-group {
+    width: auto; /* Adjust width to content or fit container */
+}
+
+.custom-input,
+.custom-span {
+    background-color: #f8fafd; /* Uniform background color */
+    border-color: #f8fafd; /* Match border color to background */
+}
+
+.custom-span {
+    width: auto; /* Auto width to ensure proper sizing */
+    text-align: center; /* Center-align the dash */
+}
+
+.input-group .custom-input:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group .custom-input:not(:last-child),
+.input-group .custom-span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 
+
 /******************************** MEDIA QUERIES ********************************/
+@media (min-width: 1200px) {
+    .custom-padding-right-11 {
+        padding-right: 11px;
+    }
+}
 @media (min-width: 1024px) { /* Applies from large screens (lg) upwards */
     /*.custom-width-23 {
         width: 23rem;
@@ -43,6 +142,18 @@ body {
     }
     .sign-up-card button {
         margin-top: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    .custom-col {
+        flex: 0 0 50%; /* Equivalent to col-6 */
+    }
+    .custom-margin-right-4 {
+        margin-right: 4px;
+    }
+    .custom-margin-left-4 {
+        margin-left: 3px;
     }
 }
 

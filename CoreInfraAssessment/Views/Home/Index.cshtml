@@ -1,6 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var price = "Price";
+    var volume = "Volume";
+    var social = "Social Interactions";
+    var circulating = "Circulating Supply";
+
 }
+
 
 <html>
     <head>
@@ -9,130 +15,748 @@
         </style>
     </head>
     <body>
-        <main class="container-fluid px-sm-4">
-        <h2 class="mb-4 mt-4 fw-semibold market"> Market layout #3 </h2>
+        <main class="container-fluid">
+            <h2 class="mb-4 mt-4 ms-2 fw-semibold market"> Market layout #3 </h2>
 
-            <div class="row g-0 px-3 px-sm-4 pt-4 pb-3 sign-up-card">
-                <div class="col-md-8 col-lg-7 col-sm-7">
-                    <h3 class="fw-bold text-wrap custom-width-23">
-                        Sign Up to AI Broker Tiers and enjoy all the perks
-                    </h3>
-                    <p class="text-wrap mt-3" style="font-size: 12px;">
-                        Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to AI Broker tiers now !
-                    </p>
+            <div class="container-fluid">
+                <div class="row g-0 px-3 px-sm-4 pt-4 pb-3 sign-up-card custom-card">
+                    <div class="col-md-8 col-lg-7 col-sm-7">
+                        <h3 class="fw-bold text-wrap custom-width-23">
+                            Sign Up to AI Broker Tiers and enjoy all the perks
+                        </h3>
+                        <p class="text-wrap mt-3" style="font-size: 12px;">
+                            Unlock exclusive access to premium content, personalized insights, and unique perks by subscribing to AI Broker tiers now !
+                        </p>
+                    </div>
+                    <div class="col-sm col-lg-3 d-none d-sm-block"></div>
+                    <div class="col-md-3 col-lg-2 col-sm-4 d-flex d-sm-block mt-4 mt-sm-5 mt-md-4 justify-content-end justify-content-md-end">
+                        <button class="btn btn-primary px-4 py-2" style="font-size:13px">Sign Up Now <span><i class="fa-solid fa-arrow-up-right-from-square me-0 mt-1" style="color: #ffffff;font-size:13px"></i></span></button>
+                    </div>
                 </div>
-                <div class="col-sm col-lg-3 d-none d-sm-block"></div>
-                <div class="col-md-3 col-lg-2 col-sm-4 d-flex d-sm-block mt-4 mt-sm-5 mt-md-4 justify-content-end justify-content-md-end">
-                    <button class="btn btn-primary px-4 py-2" style="font-size:13px">Sign Up Now <span><i class="fa-solid fa-arrow-up-right-from-square me-0 mt-1" style="color: #ffffff;font-size:13px"></i></span></button>
-                </div>  
-            </div>  
+             </div>
             
-            <div class="row row-cols-1 container-fluid row-cols-md-2 gy-3 g-md-3 mt-4">
-                <div class="top5-cols">
-                    <div class="d-flex ms-1">
-                        <div>@*  grey bg for icon *@
-                            <i class="fa-solid fa-people-group"></i>
+            <div class="container-fluid mt-5">
+                <div class="row g-4">
+                    <div class="d-flex flex-wrap custom-col align-items-stretch">
+                        <div class="card w-100 px-4 pt-3 pb-2 border-0 rounded-4 custom-card custom-margin-right-4">
+                            <div class="d-flex ms-3">
+                                <div class="">
+                                    <i class="fa-solid fa-people-group fs-6 icon-bg rounded-3 custom-padding"></i>
+                                </div>
+                                <div class="align-content-center">
+                                    <h5 class="social-title mt-2 ms-4">Top 5 Social Activity</h5>
+                                </div>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-between text-uppercase">
+                                <span class="custom-font-weight-5">Token</span>
+                                <span class="custom-font-weight-5">Interactions</span>
+                            </div>
+                            <div class="mt-3 top-5-body">
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/cardano-removebg-preview.png" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Cardano</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ADA</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">5.06K</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">7d</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+49.28%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Trust Wallet Token</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">TWT</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">26.38K</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">7d</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+13.78%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Ethereum Classic</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ETC</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">256</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">7d</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+10.34%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Kava</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">KAVA</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">64</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">7d</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+255.56%</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Monero</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">XMR</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">1.99K</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">7d</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+9.87%</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h2 class="">Top 5 Social Activity</h2> @* add text wrapping if not default *@
                     </div>
-                    <div class="mt-2 d-flex justify-content-between text-uppercase">
-                        <p>Token</p>
-                        <p>Interactions</p>
-                    </div>
-                    <div class="mt-2">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <img src="~/assets/cardano-removebg-preview.png" height="25px" width="25px"/>
+
+                    <div class="flex-wrap custom-col d-flex align-items-stretch">
+                    <div class="card w-100 px-4 pt-3 pb-2 border-0 rounded-4 custom-card custom-margin-left-4">
+                            <div class="d-flex ms-3">
                                 <div>
-                                    <p>Cardano</p>
-                                    <p>ADA</p>
+                                    <i class="fs-6 icon-bg rounded-3 custom-padding"></i>
+                                </div>
+                                <div class="align-content-center">
+                                    <h5 class="social-title mt-2 ms-4">Top 5 Volume</h5>
                                 </div>
                             </div>
-                            <div>
-                                <p>5.06K</p>
-                                <div>
-                                    <span>7D</span>
-                                    <span>+49.28%</span>
-                                </div>
+                            <div class="mt-4 d-flex justify-content-between text-uppercase">
+                                <span class="custom-font-weight-5">Token</span>
+                                <span class="custom-font-weight-5">Volume</span>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <img src="~/assets/" height="25px" width="25px" />
-                                <div>
-                                    <p>Trust Wallet Token</p>
-                                    <p>TWT</p>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px"  />
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-bold">Binance</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$11.82B</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-4.87%</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <p>26.38K</p>
-                                <div>
-                                    <span>7D</span>
-                                    <span>+13.78%</span>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-bold">Gate.io</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$976.92M</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-3.44%</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <img src="~/assets/" height="25px" width="25px" />
-                                <div>
-                                    <p></p>
-                                    <p></p>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div>
+                                             <span class="d-block fw-bold">Coinbase Exchange</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$1.46B</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-9.09%</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <p></p>
-                                <div>
-                                    <span></span>
-                                    <span></span>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div>
+                                             <span class="d-block fw-bold">LBank</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$1.46B</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+13.11%</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <img src="~/assets/" height="25px" width="25px" />
-                                <div>
-                                    <p></p>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div>
-                                <p></p>
-                                <div>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <img src="~/assets/" height="25px" width="25px" />
-                                <div>
-                                    <p></p>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div>
-                                <p></p>
-                                <div>
-                                    <span></span>
-                                    <span></span>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-bold">MEXC Global</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$946.82M</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-12.53%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="top5-cols">
+                <div class="row g-4 custom-margin-top-12">
+                    <div class="d-flex flex-wrap custom-col align-items-stretch">
+                        <div class="card w-100 px-4 pt-3 pb-2 border-0 custom-card custom-margin-right-4">
+                            <div class="d-flex ms-3">
+                                <div class="">
+                                    <i class="fs-6 icon-bg rounded-3 custom-padding"></i>
+                                </div>
+                                <div class="align-content-center">
+                                    <h5 class="social-title mt-2 ms-4">Top 5 Gainers</h5>
+                                </div>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-between text-uppercase">
+                                <span class="custom-font-weight-5">Token</span>
+                                <span class="custom-font-weight-5">Total gain</span>
+                            </div>
+                            <div class="mt-3 top-5-body">
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">ADAUP</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ADAUP</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$0.503</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+22.38%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Injective</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">INJ</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$8.988</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+22.13%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Band Protocol</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">BAND</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$1.726</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+20.73%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">COTI</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">COTI</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$0.08018</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+18.35%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Conflux</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">WAN</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$0.321</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-green ms-1">+17.84%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="d-flex flex-wrap custom-col align-items-stretch">
+                        <div class="card w-100 px-4 pt-3 pb-2 border-0 rounded-4 custom-card custom-margin-left-4">
+                            <div class="d-flex ms-3">
+                                <div class="">
+                                    <i class="fs-6 icon-bg rounded-3 custom-padding"></i>
+                                </div>
+                                <div class="align-content-center">
+                                    <h5 class="social-title mt-2 ms-4">Top 5 Losers</h5>
+                                </div>
+                            </div>
+                            <div class="mt-4 d-flex justify-content-between text-uppercase">
+                                <span class="custom-font-weight-5">Token</span>
+                                <span class="custom-font-weight-5">Total loss</span>
+                            </div>
+                            <div class="mt-3 top-5-body">
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">ARPA Chain</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ARPA</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$0.05045</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-9.06%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Klaytn</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">KLAY</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$0.1730</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-6.49%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Ethernity Chain</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ERN</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$1.853</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-5.12%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">FC Porto Fan Token</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">PORTO</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$2.3739</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-1.98%</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between custom-margin-bottom-12">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <img src="~/assets/" height="50px" width="50px" style="object-fit:contain; margin-top: -10px" />
+                                        </div>
+                                        <div class="">
+                                            <span class="d-block fw-bold">Orion Protocol</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ORN</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="d-flex justify-content-end fw-bold">$1.0530</span>
+                                        <span class="icon-bg px-1 custom-border-radius custom-font-weight-6 me-1">24h</span>
+                                        <span class="custom-font-weight-6 custom-text-color-red ms-1">-1.89%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="top5-cols">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="card w-100 px-3 pt-4 pb-2 border-0 custom-card">
+                        <div class="row align-items-center">
 
-                </div>
+                            <div class="col-lg-auto order-lg-1 order-1 col-12 mb-3">
+                                <h4 class="w-100">All Tokens</h4>
+                            </div>
 
-                <div class="top5-cols">
+                            <!-- Spacer Column (for large screens only) -->
+                            <div class="col-lg-5 bg-dark order-lg-2 d-none d-lg-block"></div>
 
+                            <!-- Clear button (Order first on large screens) -->
+                            <div class="col-lg-auto order-lg-3 order-3 mb-2 col flex-shrink-0">
+                                <button class="btn btn-sm btn-light custom-text-color-grey custom-box-shadow custom-font-size-12 w-100 custom-input-height">Clear</button>
+                            </div>
+
+                            <!-- Search input (Full width on medium screens) -->
+                            <div class="col-lg flex-grow-1 order-lg-4 order-2 mb-2">
+                                <input type="text" class="form-control form-control-sm w-100 custom-input-height custom-font-size-12" placeholder="Search..." aria-label="Search">
+                            </div>
+
+                            <!-- Additional buttons (Appear after search on medium screens) -->
+                            <div class="col-lg-auto order-lg-5 order-4 mb-2 col text-nowrap flex-shrink-0">
+                                <button class="btn btn-sm btn-close-white custom-text-color-grey custom-box-shadow custom-font-size-12 w-100 custom-input-height">Columns <i class="fa-solid fa-table-columns fa-rotate-270"></i></button>
+                            </div>
+
+                            <div class="col-lg-auto order-lg-6 order-5 mb-2 col text-nowrap flex-shrink-0">
+                                <button class="btn btn-sm btn-primary custom-box-shadow custom-font-size-12 w-100 custom-input-height">Filters <i class="fa-solid fa-arrow-down-wide-short"></i></button>
+                            </div>
+                        </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">
+                                    <div>
+                                        <span> Token <i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Choose values
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Bitcoin(BTC)</a></li>
+                                                <li><a class="dropdown-item" href="#">Ethereum(ETH)</a></li>
+                                                <li><a class="dropdown-item" href="#">Tether(USDT)</a></li>
+                                                <li><a class="dropdown-item" href="#">BNB(BNB)</a></li>
+                                                <li><a class="dropdown-item" href="#">XRP(XRP)</a></li>
+                                                <li><a class="dropdown-item" href="#">USD Coin(USDC)</a></li>
+                                                <li><a class="dropdown-item" href="#">Cardano (ADA)</a></li>
+                                                <li><a class="dropdown-item" href="#">Arbitrum(ARB)</a></li>
+                                                <li><a class="dropdown-item" href="#">OKB(OKB)</a></li>
+                                                <li><a class="dropdown-item" href="#">Avalanche(AVAX)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <partial name="_PriceRangeFilter" model="price" />
+                                </th>
+                                <th scope="col">
+                                    <partial name="_PriceRangeFilter" model="volume" />
+                                </th>
+                                <th scope="col">
+                                    <partial name="_PriceRangeFilter" model="social" />
+                                </th>
+                                <th scope="col">
+                                    <partial name="_PriceRangeFilter" model="circulating" />
+                                </th>
+                                <th scope="col">
+                                    <div>
+                                        <span> Circulating Supply <i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Choose value
+                                            </button>
+                                            
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> 
+                                <td><i class="fa-regular fa-star" style="color: #23a6f0;"></i>
+                                <i class="fa-solid fa-file-lines" style="color: #23a6f0;"></i></td>
+
+                                <td >
+                                    <div class="d-flex align-items-center">
+                                    <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                    <div class="ms-2">
+                                        <span class="d-block fw-bold">Cardano</span>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">ADA</span>
+                                    </div> 
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex flex-column align-items-start">
+                                    <span class="d-block custom-text-color-grey custom-font-weight-6">$1000</span>
+                                    <div class="ms-2 d-flex justify-content-between">
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">7h</span>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6 text-success">+1.15%</span>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">$1000</span>
+                                        <div class="ms-2 d-flex justify-content-between">
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+               
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex  align-items-center">
+                                            <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                            <div class="ms-2 d-flex flex-column justify-content-between">
+                                                <span>25.75k</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="d-flex  align-items-center">
+                                            <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                            <div class="ms-2 d-flex flex-column justify-content-between">
+                                                <span>25.75k</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                   
+                                </td>
+
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-between">
+
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">19.36M</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">BTC</span>
+                                        </div>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">90%</span>
+
+                                    </div>
+                                   
+
+                                </td>
+                              
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-regular fa-star" style="color: #23a6f0;"></i>
+                                    <i class="fa-solid fa-file-lines" style="color: #23a6f0;"></i>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                        <div class="ms-2">
+                                            <span class="d-block fw-bold">Cardano</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">ADA</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">$1000</span>
+                                        <div class="ms-2 d-flex justify-content-between">
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">7h</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6 text-success">+1.15%</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">$1000</span>
+                                        <div class="ms-2 d-flex justify-content-between">
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                            <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex  align-items-center">
+                                            <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                            <div class="ms-2 d-flex flex-column justify-content-between">
+                                                <span>25.75k</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex  align-items-center">
+                                            <img src="~/assets/bitcoin.jpeg" width="20" height="20" />
+                                            <div class="ms-2 d-flex flex-column justify-content-between">
+                                                <span>25.75k</span>
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6">24h</span>
+                                                    <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">-2.39%</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <div class="d-flex justify-content-between">
+                                       <div class="d-flex flex-column justify-content-between">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="d-block custom-text-color-grey custom-font-weight-6">19.36M</span>
+                                                <span class="d-block custom-text-color-grey custom-font-weight-6 text-danger">BTC</span>
+                                            </div> 
+
+                                       </div>
+                                        <span class="d-block custom-text-color-grey custom-font-weight-6">90%</span>
+
+                                    </div>
+
+
+                                </td>
+
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                        <div class="table-responsive-xl">
+                            <div>
+                                <div>
+                                    <i class="fa-regular fa-star" style="color: #23a6f0;"></i>
+                                </div>
+
+                                <div>
+                                    <span> Token <i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span>
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Choose values
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Bitcoin(BTC)</a></li>
+                                            <li><a class="dropdown-item" href="#">Ethereum(ETH)</a></li>
+                                            <li><a class="dropdown-item" href="#">Tether(USDT)</a></li>
+                                            <li><a class="dropdown-item" href="#">BNB(BNB)</a></li>
+                                            <li><a class="dropdown-item" href="#">XRP(XRP)</a></li>
+                                            <li><a class="dropdown-item" href="#">USD Coin(USDC)</a></li>
+                                            <li><a class="dropdown-item" href="#">Cardano (ADA)</a></li>
+                                            <li><a class="dropdown-item" href="#">Arbitrum(ARB)</a></li>
+                                            <li><a class="dropdown-item" href="#">OKB(OKB)</a></li>
+                                            <li><a class="dropdown-item" href="#">Avalanche(AVAX)</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+
+                                <div>
+                                    <span> Price <i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span>
+                                    <div class="input-group custom-input-group">
+                                        <input type="text" aria-label="from" class="form-control custom-input" placeholder="from">
+                                        <span class="input-group-text custom-span">-</span>
+                                        <input type="text" aria-label="to" class="form-control custom-input" placeholder="to">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span> Volume <i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span>
+                                </div>
+
+                                <div>
+                                    <span> Social Interactions<i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span> 
+                                </div>
+
+                                <div>
+                                    <span> Circulating Supply<i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span> 
+                                </div>
+
+                                <div>
+                                    <span> 24h Curve<i class="fa-solid fa-caret-down" style="color: #1b2559;"></i></span> 
+                                     <div class="dropdown">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Choose values
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Choose value</a></li>
+                                            <li><a class="dropdown-item" href="#">Extreme Fear</a></li>
+                                            <li><a class="dropdown-item" href="#">Fear</a></li>
+                                            <li><a class="dropdown-item" href="#">Neutral</a></li>
+                                            <li><a class="dropdown-item" href="#">Greed</a></li>
+                                            <li><a class="dropdown-item" href="#">Extreme Greed</a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+
+
+
+                            <div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
