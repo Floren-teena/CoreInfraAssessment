@@ -1,7 +1,7 @@
-﻿*{
+﻿@import url('styles.css');
+*{
     margin: 0;
     padding: 0;
-    /*overflow:hidden;*/
 }
 
 body {
@@ -68,12 +68,22 @@ body {
 }
 
 .custom-col {
-    flex: 0 0 100%; /* Default to col-12 */
+    flex: 0 0 100%;
 }
 
-.custom-padding {
-    padding: 12px 10px;
+.custom-padding-y {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
 
+.custom-padding-x {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.custom-padding-x2 {
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .top-5-body span {
@@ -94,18 +104,19 @@ body {
 }
 
 .custom-input-group {
-    width: auto; /* Adjust width to content or fit container */
+    width: 140px; 
 }
 
 .custom-input,
 .custom-span {
-    background-color: #f8fafd; /* Uniform background color */
-    border-color: #f8fafd; /* Match border color to background */
+    background-color: #f8fafd; 
+    border-color: #f8fafd;
+    font-size: 12px;
 }
 
 .custom-span {
-    width: auto; /* Auto width to ensure proper sizing */
-    text-align: center; /* Center-align the dash */
+    width: auto;
+    text-align: center;
 }
 
 .input-group .custom-input:not(:first-child) {
@@ -119,18 +130,78 @@ body {
     border-bottom-right-radius: 0;
 }
 
+.star {
+    cursor: pointer;
+    font-size: 16px;
+    color: #23a6f0;
+}
 
+.filter-btn {
+    background: linear-gradient(175deg, rgba(135,175,247,1) 0%, rgba(71,102,234,1) 57.99999999999999%);
+    color: white;
+}
+
+.custom-box-shadow-2 {
+    box-shadow: 3px 0 20px rgba(200,200,200,0.2);
+}
+
+.custom-border {
+    border: 1px solid rgba(200,200,200,0.1);
+}
+
+.custom-font-size-13-5 {
+    font-size: 13.5px;
+}
+
+.custom-font-color {
+    color: #1B2559;
+}
+
+.custom-font-size-10 {
+    font-size: 10.72px;
+}
+
+.custom-margin-right-2 {
+    margin-right: 1px;
+}
+
+.custom-padding-left-11 {
+    padding-left: 11px;
+}
+
+.navv{
+    margin-left:5%
+}
+
+#sidebar-full, #sidebar-icon{
+    height: 100%;
+    position:fixed;
+    z-index:8;
+    top:0;
+   
+}
+
+.content{
+    margin-left: 7%
+}
+
+#sidebar-icon {
+    width:5%
+}
+
+#sidebar-full{
+    width:20%
+}
+
+.hidden {
+    display: none
+}
 
 /******************************** MEDIA QUERIES ********************************/
 @media (min-width: 1200px) {
     .custom-padding-right-11 {
         padding-right: 11px;
     }
-}
-@media (min-width: 1024px) { /* Applies from large screens (lg) upwards */
-    /*.custom-width-23 {
-        width: 23rem;
-    }*/
 }
 
 @media (min-width: 768px) { /* Applies from medium screens (md) upwards */
@@ -147,7 +218,7 @@ body {
 
 @media (min-width: 600px) {
     .custom-col {
-        flex: 0 0 50%; /* Equivalent to col-6 */
+        flex: 0 0 50%;
     }
     .custom-margin-right-4 {
         margin-right: 4px;
@@ -155,12 +226,6 @@ body {
     .custom-margin-left-4 {
         margin-left: 3px;
     }
-}
-
-@media (min-width: 576px) { /* Applies from tablet screens (sm) upwards */
-    /*.sign-up-card {
-        padding: 24px 40px 16px;
-    }*/
 }
 
 @media (min-width: 320px) {
