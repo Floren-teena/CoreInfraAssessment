@@ -197,12 +197,52 @@ body {
     display: none
 }
 
+.search-input {
+    border-left: none;
+}
+
+.custom-border-radius-icon {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-border-radius-search {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.custom-height {
+    height: 41px;
+}
+
+.custom-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-font-34 {
+    font-size: 34px;
+}
+
+.custom-width-90 {
+    width: 90%;
+}
+
+
 /******************************** MEDIA QUERIES ********************************/
 @media (min-width: 1200px) {
     .custom-padding-right-11 {
         padding-right: 11px;
     }
 }
+
+/* Adjust spacing between the search bar and checkbox on small screens */
+@media (max-width: 991px) { /* This applies to screens smaller than 992px (Bootstrap's lg breakpoint) */
+    .search-checkbox-container {
+        margin-right: 1rem; /* Adjust as needed for spacing */
+    }
+}
+
 
 @media (min-width: 768px) { /* Applies from medium screens (md) upwards */
     .custom-font-size-13 {
@@ -213,6 +253,9 @@ body {
     }
     .sign-up-card button {
         margin-top: 10px;
+    }
+    .custom-display {
+        flex-direction: row;
     }
 }
 

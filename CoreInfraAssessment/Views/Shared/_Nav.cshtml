@@ -1,25 +1,285 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-    <nav class="navbar navbar-expand px-4 py-3 d-flex justify-content-evenly position-relative z-3">
-        <form action="#" class="d-sm-inline-block w-50 navv">
-            <div class="input-group input-group-navbar" style="background-color: #f8fafd; display:flex;">
-                <i class="fa-solid fa-magnifying-glass ms-4" style="display:flex; align-items:center"></i>
-                <input type="text" class="form-control border-0 rounded-0" style="background-color: #f8fafd;" placeholder="Search..." />
+﻿
+    @* <nav class="navbar navbar-expand px-4 py-3 custom-display position-relative z-3" style="background-color:white;">
+        <img src="~/assets/ScreenshotCILogo-removebg-preview.png" width="60" heigt="60px" class=""/>
+        <form action="#" class="d-sm-inline-block w-75 ms-4">
+            <div class="input-group flex-grow-1 custom-border-radius-10" style="display:flex;">
+                <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                </span>
+                <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                
             </div>
         </form>
-        <div class="d-flex navbar-collapse collapse w-50 d-flex justify-content-evenly">
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-envelope"></i>
-            <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar" style="height:50px; width:50px;" />
-            <p class="text-wrap" style="background-color:red; width:12rem">Austin Robertson Marketing Administrator</p>
+        <div class="d-flex d-block navbar-collapse collapse w-50 justify-content-evenly">
+            <i class="fa-solid fa-bell" style="color:#d7dfea; font-size:20px"></i>
+            <i class="fa-solid fa-envelope" style="color:#d7dfea; font-size:20px"></i>
+            <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar" style="height:45px; width:45px;" />
+            <div>
+                <span class="d-block fs-6">Austin Robertson</span>
+                <span>Marketing Administrator</span>
+            </div>
             <div class="form-check form-switch"> 
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             </div>
-            <img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar" style="height:50px; width:50px;" />
+            <img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar" style="height:35px; width:35px;" />
         </div>
-    </nav>
+    </nav> *@
+
+ @* <nav class="navbar navbar-expand-lg px-4 py-3 custom-display position-relative z-3" style="background-color:white;">
+    <a class="navbar-brand" href="#">
+        <img src="~/assets/ScreenshotCILogo-removebg-preview.png" width="60" height="60px" class="" />
+        <span class="custom-font-weight-6 custom-font-34 d-lg-none" style="color:#1B2559;">Extej</span>
+    </a>
+
+    <!-- Toggle button for mobile view -->
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i id="menu-icon" class="fa-solid fa-bars custom-text-color-grey icon-bg rounded-3 custom-padding-y custom-padding-x2" aria-hidden="true"></i>
+        <i id="back-icon" class="fa-solid fa-arrow-left-long d-none custom-text-color-grey icon-bg rounded-3 custom-padding-y custom-padding-x2" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse navbar-collapse w-100" id="navbarContent">
+        <form action="#" class="d-lg-inline-block w-100 mt-2 mt-lg-0">
+            <div class="input-group flex-grow-1 custom-border-radius-10">
+                <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                </span>
+                <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+            </div>
+        </form>
+
+        <!-- Icons and Profile Section -->
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-bell" style="color:#d7dfea; font-size:20px"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-envelope" style="color:#d7dfea; font-size:20px"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar me-2" style="height:45px; width:45px;" />
+                    <div class="d-none d-lg-block">
+                        <span class="d-block fs-6">Austin Robertson</span>
+                        <span>Marketing Administrator</span>
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <div class="form-check form-switch ms-3">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar" style="height:35px; width:35px;" /></a>
+            </li>
+        </ul>
+    </div>
+</nav>   *@
+
+<!-- main former code -->
+<nav class="navbar navbar-expand-lg px-4 py-3 custom-display position-relative z-3" style="background-color:white;">
+    <a class="navbar-brand mb-2" href="#">
+        <img src="~/assets/ScreenshotCILogo-removebg-preview.png" width="60" height="60px"/>
+        <span class="custom-font-weight-6 custom-font-34 d-lg-none" style="color:#1B2559;">Extej</span>
+    </a>
+
+    <!-- Toggle button for mobile view -->
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i id="menu-icon" class="fa-solid fa-bars custom-text-color-grey icon-bg rounded-3 custom-padding-y custom-padding-x2" aria-hidden="true"></i>
+        <i id="back-icon" class="fa-solid fa-arrow-left-long d-none custom-text-color-grey icon-bg rounded-3 custom-padding-y custom-padding-x2" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse navbar-collapse w-100" id="navbarContent">
+        <!-- Collapsed structure for small screens -->
+        <div class="row w-100 d-lg-none">
+            <!-- First line (User info and envelope icon) -->
+            <div class="col-12 d-flex align-items-center justify-content-between mb-2">
+                <div class="d-flex align-items-center">
+                    <img src="~/assets/user.png" alt="User Image" class="img-fluid avatar me-2" style="height:45px; width:45px;" />
+                    <div>
+                        <span class="d-block fs-6">Austin Robertson</span>
+                        <span>Marketing Administrator</span>
+                    </div>
+                </div>
+                <!-- Envelope icon -->
+                <i class="fa fa-envelope" style="color:#d7dfea; font-size:20px;"></i>
+            </div>
+
+            <!-- Second line (Search box, checkbox, UK flag) with grey background -->
+            <div class="col-12 d-flex align-items-center py-2">
+                <form action="#" class="w-100">
+                    <div class="input-group flex-grow-1 custom-border-radius-10">
+                        <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                        </span>
+                        <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height custom-search-bar" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                    </div>
+                </form>
+                <div class="d-flex align-items-center search-checkbox-container me-0">
+                    <div class="form-check form-switch me-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <img src="~/assets/uk.svg" alt="UK Flag" class="img-fluid avatar" style="height:32px; width:32px;" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Large screen structure -->
+        <div class="row d-flex w-100 d-none d-lg-inline-flex align-items-center">
+            <form action="#" class="col-lg-7 col-xl-8">
+                <div class="input-group flex-grow-1 custom-border-radius-10">
+                    <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                    </span>
+                    <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                </div>
+            </form>
+            <div class="col-lg-5 col-xl-4 d-flex align-items-center px-0">
+                <i class="fa-solid fa-bell me-3" style="color:#d7dfea; font-size:20px"></i>
+                <i class="fa-solid fa-envelope me-3" style="color:#d7dfea; font-size:20px"></i>
+                <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar me-3 style="height:45px; width:45px;" />
+                <div class="d-none d-lg-block no-wrap-text" style="min-width: 150px;">
+                    <span class="d-block fs-6">Austin Robertson</span>
+                    <span>Marketing Administrator</span>
+                </div>
+                <div class="form-check form-switch ms-3 me3">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+                <img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar me-2" style="height:32px; width:32px;" />
+            </div>
+        </div>
+
+        <!--New main code-->
+@* <nav class="navbar custom-navbar navbar-expand-lg px-4 py-3 position-relative z-3">
+    <!-- Hamburger menu for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Logo and brand -->
+    <a class="navbar-brand" href="#">
+        <img src="~/assets/ScreenshotCILogo-removebg-preview.png" width="60" height="60px" class="" />
+        <span class="custom-font-weight-6 custom-font-34" style="color:#1B2559;">Extej</span>
+    </a>
+
+    <!-- Navbar content -->
+    <div class="collapse navbar-collapse w-100" id="navbarContent">
+        <!-- Collapsed structure for small screens -->
+        <div class="row w-100 d-lg-none">
+            <!-- First line (User info and envelope icon) -->
+            <div class="col-12 d-flex align-items-center justify-content-between mb-2">
+                <div class="d-flex align-items-center">
+                    <img src="~/assets/user.png" alt="User Image" class="img-fluid avatar me-2" style="height:45px; width:45px;" />
+                    <div>
+                        <span class="d-block fs-6">Austin Robertson</span>
+                        <span>Marketing Administrator</span>
+                    </div>
+                </div>
+                <!-- Envelope icon -->
+                <i class="fa fa-envelope" style="color:#d7dfea; font-size:20px;"></i>
+            </div>
+
+            <!-- Second line (Search box, checkbox, UK flag) with grey background -->
+            <div class="col-12 d-flex align-items-center py-2">
+                <form action="#" class="w-100">
+                    <div class="input-group flex-grow-1 custom-border-radius-10">
+                        <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                        </span>
+                        <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height custom-search-bar" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                    </div>
+                </form>
+                <div class="d-flex align-items-center search-checkbox-container ms-3 me-0">
+                    <div class="form-check form-switch me-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                    <img src="~/assets/uk.svg" alt="UK Flag" class="img-fluid avatar" style="height:32px; width:32px;" />
+                </div>
+            </div>
+        </div> 
+
+        <!-- Large screen structure -->
+        <div class="row d-flex w-100 d-none d-lg-inline-flex align-items-center">
+            <form action="#" class="col-8">
+                <div class="input-group flex-grow-1 custom-border-radius-10">
+                    <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                    </span>
+                    <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                </div>
+            </form>
+            <div class="col-4 d-flex align-items-center px-0">
+                <i class="fa-solid fa-bell me-3" style="color:#d7dfea; font-size:20px"></i>
+                <i class="fa-solid fa-envelope me-3" style="color:#d7dfea; font-size:20px"></i>
+                <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar me-3" style="height:45px; width:45px;" />
+                <div class="nav-text-container d-none d-lg-block">
+                    <span class="d-block fs-6">Austin Robertson</span>
+                    <span>Marketing Administrator</span>
+                </div>
+                <div class="form-check form-switch ms-3 me3">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+                <img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar me-2" style="height:32px; width:32px;" />
+            </div>
+        </div>
+    </div>
+</nav> *@
+
+
+        @* <div class="d-none d-lg-flex align-items-center">
+            <!-- Search box -->
+            
+                <form action="#" class="d-lg-inline-block w-100">
+                    <div class="input-group flex-grow-1 custom-border-radius-10">
+                        <span class="input-group-text custom-input-group-text custom-border custom-border-radius-icon custom-height" id="basic-addon2" style="background-color:#f8fafd">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #a8b8d0"></i>
+                        </span>
+                        <input type="text" class="form-control custom-input-height search-input custom-border custom-border-radius-search custom-height" placeholder="Search..." style="background-color:#f8fafd" aria-label="Search" aria-describedby="basic-addon2">
+                    </div>
+                </form>
+           
+
+            <!-- Icons and Profile Section -->
+                <ul class="ms-auto d-flex align-items-center">
+                    <li  class="nav-item">
+                        <i class="fa-solid fa-bell" style="color:#d7dfea; font-size:20px"></i>
+                    </li>
+                    <li  class="nav-item">
+                        <i class="fa-solid fa-envelope" style="color:#d7dfea; font-size:20px"></i>
+                    </li>
+                    <li  class="nav-item">
+                        <img src="~/assets/user.png" alt="Alternate Text" class="img-fluid avatar" style="height:45px; width:45px;" />
+                        <div>
+                            <span class="d-block fs-6">Austin Robertson</span>
+                            <span>Marketing Administrator</span>
+                        </div>
+                    </li>
+                    <li  class="nav-item">
+                        <div class="form-check form-switch ms-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                    <li  class="nav-item"><img src="~/assets/uk.svg" alt="Uk flag" class="img-fluid avatar" style="height:35px; width:35px;" /></li>
+                </ul>
+            
+        </div> *@
+    </div>
+</nav>
+
+
+<script>
+    document.getElementById('navbar-toggler').addEventListener('click', function () {
+        const menuIcon = document.getElementById('menu-icon');
+        const backIcon = document.getElementById('back-icon');
+
+        // Toggle visibility between the two icons
+        menuIcon.classList.toggle('d-none');
+        backIcon.classList.toggle('d-none');
+    });
+</script>
+
 
