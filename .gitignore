@@ -8,11 +8,6 @@
 [Oo]bj/
 [Ll]ogs/
 
-# User-specific files
-*.user
-*.userosscache
-*.suo
-
 # Visual Studio Code files
 .vscode/
 
@@ -41,7 +36,6 @@ publish/
 *.dbmdl
 *.dbproj.schemaview
 *.dbproj
-*.csproj
 **/Properties/launchSettings.json
 
 # Backup files
