@@ -1,40 +1,55 @@
-# ASP.NET Core
-bin/
-obj/
-*.db
-*.db-journal
-*.pdb
-*.log
-**/Properties/launchSettings.json
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[xX]86/
+[Aa][Rr][Mm]/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
 
 # User-specific files
 *.user
 *.userosscache
 *.suo
 
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Visual Studio files
+# Visual Studio Code files
 .vscode/
-.vscode/*
-*.vs/
 
-# Rider files
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+
+# Azure Web App Publish folder
+publish/
+
+# Visual Studio settings
+.vs/
+
+# Rider settings
 .idea/
-*.sln.iml
 
-# DotNet Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
+# Environment Variables
+.env
+*.local
 
-# Auto-generated files
-!*.cs
-!*.json
-!*.csproj
-!*.sln
+# Other files
+*.log
+*.tlog
+*.dbmdl
+*.dbproj.schemaview
+*.dbproj
+*.csproj
+**/Properties/launchSettings.json
 
-# npm packages
-node_modules/
+# Backup files
+*.bak
+*.tmp
+*.temp
+
+# Ignore secrets
+appsettings.Development.json
+appsettings.Production.json
+appsettings.json
